@@ -1,9 +1,11 @@
 fileFormatVersion: 2
 guid: 35cc5fc0f1637d1439948e2fcbdd0eb3
-timeCreated: 1520262203
+timeCreated: 1520633115
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: CrabClaws_0
+    21300002: CrabClaws_1
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -81,7 +83,35 @@ TextureImporter:
     overridden: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: CrabClaws_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 1059
+        width: 2037
+        height: 938
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: CrabClaws_1
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 220
+        width: 2021
+        height: 807
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
     outline: []
     physicsShape: []
   spritePackingTag: 

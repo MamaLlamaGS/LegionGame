@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: b3ad599eab2bd6c459d3117fae54473e
+timeCreated: 1520636306
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Invader Candy
+  fontNames:
+  - Invader Candy
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -44,6 +44,9 @@ TagManager:
   - name: Background
     uniqueID: 357866049
     locked: 0
+  - name: Objects
+    uniqueID: 1161874337
+    locked: 0
   - name: UIBack
     uniqueID: 3737702283
     locked: 0
@@ -52,4 +55,7 @@ TagManager:
     locked: 0
   - name: Text
     uniqueID: 2451092827
+    locked: 0
+  - name: Demon Parts
+    uniqueID: 2128832755
     locked: 0
