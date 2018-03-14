@@ -1,11 +1,9 @@
 fileFormatVersion: 2
-guid: 53f72a26fd99e6445a4b570cb5a70a38
-timeCreated: 1520632664
+guid: ba11cc6139e9f2f4586c49473634b5ed
+timeCreated: 1520886406
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: Bear ears_0
-    21300002: Bear ears_1
+  fileIDToRecycleName: {}
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -83,35 +81,7 @@ TextureImporter:
     overridden: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: Bear ears_0
-      rect:
-        serializedVersion: 2
-        x: 69
-        y: 1069
-        width: 1878
-        height: 679
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Bear ears_1
-      rect:
-        serializedVersion: 2
-        x: 90
-        y: 332
-        width: 1820
-        height: 679
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
+    sprites: []
     outline: []
     physicsShape: []
   spritePackingTag: 
