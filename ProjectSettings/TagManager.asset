@@ -47,6 +47,9 @@ TagManager:
   - name: Objects
     uniqueID: 1161874337
     locked: 0
+  - name: other objects
+    uniqueID: 790157161
+    locked: 0
   - name: UIBack
     uniqueID: 3737702283
     locked: 0
