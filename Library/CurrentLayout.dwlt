@@ -20,7 +20,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 6}
-  m_MinSize: {x: 950, y: 542}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -42,10 +42,10 @@ MonoBehaviour:
     y: 30
     width: 1484
     height: 851
-  m_MinSize: {x: 679, y: 492}
-  m_MaxSize: {x: 14002, y: 14042}
+  m_MinSize: {x: 683, y: 492}
+  m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
-  controlID: 67
+  controlID: 66
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -64,8 +64,8 @@ MonoBehaviour:
     y: 0
     width: 301
     height: 851
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 277, y: 71}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -90,8 +90,8 @@ MonoBehaviour:
     y: 0
     width: 270
     height: 514
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
@@ -207,10 +207,10 @@ MonoBehaviour:
     y: 0
     width: 1183
     height: 851
-  m_MinSize: {x: 404, y: 492}
+  m_MinSize: {x: 406, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 68
+  controlID: 67
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -231,10 +231,10 @@ MonoBehaviour:
     y: 0
     width: 1183
     height: 514
-  m_MinSize: {x: 404, y: 221}
-  m_MaxSize: {x: 8004, y: 4021}
+  m_MinSize: {x: 406, y: 221}
+  m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
-  controlID: 34
+  controlID: 12
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -400,19 +400,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Sprites/Demon Parts
+    - Assets/Scripts
   m_ViewMode: 1
   m_StartGridSize: 96
   m_LastFolders:
-  - Assets/Sprites/Demon Parts
+  - Assets/Scripts
   m_LastFoldersGridSize: 96
   m_LastProjectPath: C:\Users\ssett\Documents\LegionGame
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 25}
-    m_SelectedIDs: d22a0000
-    m_LastClickedID: 10962
-    m_ExpandedIDs: 000000005a290000b8290000c42900006a2a0000d22a000000ca9a3bffffff7f
+    m_SelectedIDs: 14270000
+    m_LastClickedID: 10004
+    m_ExpandedIDs: 0000000040260000a2260000ae2600005c270000c427000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -440,7 +440,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 4a260000
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000005a290000b8290000c42900006a2a0000d22a0000
+    m_ExpandedIDs: 0000000040260000a2260000ae2600005c270000c4270000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -467,7 +467,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000de28000000000000742600008c2600003a26000060260000be260000aa260000562600009a260000da260000a028000098260000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -556,20 +556,20 @@ MonoBehaviour:
     height: 493
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 80340000
-    m_LastClickedID: 13440
-    m_ExpandedIDs: 1471fbff0288fbff28cafbff4216fcff542afcff58c7fcff5611fdff981efdff1e20fdff7021fdff6823fdff5047fdff34f9feffa834ffff3a69ffff1af1ffffdaf1ffffe4f5ffff000000003c2c0000422c0000a82d0000e02d0000c23000008a310000323200005032000052340000
+    m_SelectedIDs: 
+    m_LastClickedID: 0
+    m_ExpandedIDs: 8ac0fcff30c4fcff463dfdff623ffdff663ffdff6a3ffdff4647fdffe473fdfff804feffc0f6feff8e52ffff4654ffffd458fffff2b2ffffe6e6fffff6f9ffff1afcffff00000000942800003a2900004c290000322a0000ee2a0000182b00005c2b0000682b0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Backgroundsymbol
-      m_OriginalName: Backgroundsymbol
+      m_Name: UIevilbarometerwithcolor
+      m_OriginalName: UIevilbarometerwithcolor
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 13420
+      m_UserData: 10560
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
       m_OriginalEventType: 0
@@ -577,7 +577,7 @@ MonoBehaviour:
       m_ClientGUIView: {fileID: 4}
     m_SearchString: 
   m_ExpandedScenes:
-  - MainGameScreen
+  - Success Screen
   m_CurrenRootInstanceID: 0
   m_Locked: 0
   m_CurrentSortingName: TransformSorting
@@ -608,14 +608,14 @@ MonoBehaviour:
     width: 909
     height: 493
   m_SceneLighting: 1
-  lastFramingTime: 12896.57343921966
+  lastFramingTime: 2117.131608869712
   m_2DMode: 1
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -59.834084, y: -9.369611, z: -4375.75}
+    m_Target: {x: 46.018284, y: 3.572123, z: 0}
     speed: 2
-    m_Value: {x: -59.834084, y: -9.369611, z: -4375.75}
+    m_Value: {x: 46.018284, y: 3.572123, z: 0}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -642,9 +642,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 903.9841
+    m_Target: 891.8919
     speed: 2
-    m_Value: 903.9841
+    m_Value: 891.8919
   m_Ortho:
     m_Target: 1
     speed: 2
