@@ -516,7 +516,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: -57.80005, y: 19.600037}
+  m_AnchoredPosition: {x: -57.800034, y: 19.600037}
   m_SizeDelta: {x: 124.9, y: 119.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &775293921
@@ -766,7 +766,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1114595688}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1114595688
@@ -1078,7 +1089,7 @@ SpriteRenderer:
   m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 6b3e6a4752789d041b25855c9e959b21, type: 3}
-  m_Color: {r: 0.6838235, g: 0.71399224, b: 0.71399224, a: 0.697}
+  m_Color: {r: 0.4573962, g: 0.44117647, b: 0.44117647, a: 0.991}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
