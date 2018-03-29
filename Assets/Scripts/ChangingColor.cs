@@ -1,24 +1,42 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ChangingColor : MonoBehaviour
 {
     public GameObject panel;
 
-    
+    public SpriteRenderer head;
+    public SpriteRenderer body;
+    public Image squareHeadDisplay; //creation and connection of buttons to color
 
+    public Color[] colors;
     
-        
-    
-    public void OpenPanel()
+    public int whatColor = 1;
+
+    private void Update()
     {
-        panel.SetActive(true);
+        squareHeadDisplay.color = head.color; //creation and connection of buttons to color
+
+        for (int i= 0; i < colors.Length; i++)
+        {
+            if (i == whatColor) {
+                head.color = colors[i];
+                body.color = colors[i];//connection to both body and face?
+            }
+        }
+        
     }
 
-    public void ClosePanel()
+   public void ChangePanelState (bool state)
     {
-        panel.SetActive(false);
+        panel.SetActive(true);//state issue?
+    }
+
+    public void changeHeadColor(int index)
+    {
+        whatColor = index;
     }
 }
 
