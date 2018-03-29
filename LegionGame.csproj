@@ -79,9 +79,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\ChangeScene.cs" />
-    <Compile Include="Assets\Scripts\DialogueTrigger.cs" />
-    <Compile Include="Assets\Scripts\Dialoque.cs" />
-    <Compile Include="Assets\Scripts\DialoqueManager.cs" />
+    <Compile Include="Assets\Scripts\ChangingColor.cs" />
     <Compile Include="Assets\Scripts\Level.cs" />
     <Compile Include="Assets\Scripts\SceneMangler.cs" />
     <Compile Include="Assets\Scripts\StartGame.cs" />
