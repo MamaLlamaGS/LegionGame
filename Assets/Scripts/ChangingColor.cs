@@ -23,7 +23,9 @@ public class ChangingColor : MonoBehaviour
         {
             if (i == whatColor) {
                 head.color = colors[i];
-                body.color = colors[i];//connection to both body and face?
+                body.color = colors[i];
+				Debug.Log ("Update: whatColor index is " + colors[i]);
+
             }
         }
         
@@ -31,9 +33,11 @@ public class ChangingColor : MonoBehaviour
 
    public void ChangePanelState (bool state)
     {
-        panel.SetActive(state);//state issue?
+        panel.SetActive(state);
+		Debug.Log ("Update: ChangePanelState state is " + state);
     }
 
+	// should be changeDemonColor
     public void changeHeadColor(int index)
     {
         whatColor = index;
