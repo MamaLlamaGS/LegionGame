@@ -8,29 +8,16 @@ public class ChangingColor : MonoBehaviour
     public GameObject panel;
 
     public SpriteRenderer head;
-    public SpriteRenderer body;
-    //public Image squareHeadDisplay; //creation and connection of buttons to color
+    public Image body;
+    public SpriteRenderer squareHeadDisplay; //creation and connection of buttons to color
 
-	public Color[] colors;
+    public Color[] colors;
     
     public int whatColor = 1;
 
-	public void OpenPanel() {
-		Debug.Log ("ChangingColor: OpenPanel");
-
-		panel.SetActive (true);
-
-	}
-
-	public void ClosePanel() {
-		Debug.Log ("ChangingColor: ClosePanel");
-		panel.SetActive (false);
-
-	}
-
     private void Update()
     {
-		//squareHeadDisplay.color = head.color; //creation and connection of buttons to color
+        squareHeadDisplay.color = head.color; //creation and connection of buttons to color
 
         for (int i= 0; i < colors.Length; i++)
         {
@@ -39,17 +26,16 @@ public class ChangingColor : MonoBehaviour
                 body.color = colors[i];//connection to both body and face?
             }
         }
+        
     }
-		
 
    public void ChangePanelState (bool state)
     {
-        panel.SetActive(true); // whether panel is visible
+        panel.SetActive(state);//state issue?
     }
 
-    public void changeDemonColor(int index)
+    public void changeHeadColor(int index)
     {
-		Debug.Log ("ChangeColor: changeDemonColor and index is " + index);
         whatColor = index;
     }
 }

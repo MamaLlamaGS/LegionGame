@@ -1,15 +1,9 @@
 fileFormatVersion: 2
-guid: 3053dccc361c5d946a44115efe730dbd
-timeCreated: 1520887069
+guid: f9ef5f2b9bc356340bef4a981e5285b1
+timeCreated: 1522614739
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: Clawfeet_0
-    21300002: Clawfeet_1
-    21300004: Clawfeet_2
-    21300006: Clawfeet_3
-    21300008: Clawfeet_4
-    21300010: Clawfeet_5
+  fileIDToRecycleName: {}
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -87,91 +81,7 @@ TextureImporter:
     overridden: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: Clawfeet_0
-      rect:
-        serializedVersion: 2
-        x: 1072
-        y: 1000
-        width: 976
-        height: 1040
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Clawfeet_1
-      rect:
-        serializedVersion: 2
-        x: 255
-        y: 990
-        width: 785
-        height: 1058
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Clawfeet_2
-      rect:
-        serializedVersion: 2
-        x: 11
-        y: 990
-        width: 2037
-        height: 1050
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Clawfeet_3
-      rect:
-        serializedVersion: 2
-        x: 175
-        y: 45
-        width: 854
-        height: 929
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Clawfeet_4
-      rect:
-        serializedVersion: 2
-        x: 1051
-        y: 104
-        width: 922
-        height: 870
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Clawfeet_5
-      rect:
-        serializedVersion: 2
-        x: 11
-        y: 61
-        width: 2037
-        height: 939
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
+    sprites: []
     outline: []
     physicsShape: []
   spritePackingTag: 

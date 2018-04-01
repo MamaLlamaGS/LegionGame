@@ -79,6 +79,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\ChangeScene.cs" />
+    <Compile Include="Assets\Scripts\ChangingAppearence.cs" />
     <Compile Include="Assets\Scripts\ChangingColor.cs" />
     <Compile Include="Assets\Scripts\Level.cs" />
     <Compile Include="Assets\Scripts\SceneMangler.cs" />

@@ -1,9 +1,10 @@
 fileFormatVersion: 2
-guid: 51f57a769fe18264d99ab42dcaf4b2f0
-timeCreated: 1520891899
+guid: c721f8e539bfc5e4ca8369015745821d
+timeCreated: 1522615035
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: clawedwing_0
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -81,7 +82,21 @@ TextureImporter:
     overridden: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: clawedwing_0
+      rect:
+        serializedVersion: 2
+        x: 1016
+        y: 24
+        width: 996
+        height: 1225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
     outline: []
     physicsShape: []
   spritePackingTag: 

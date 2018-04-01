@@ -1,11 +1,9 @@
 fileFormatVersion: 2
-guid: fb3cdd093b09e2d4e98c5e5ce93f4095
-timeCreated: 1520633053
+guid: 0417c5f6d8425354daf0133a6ca469c4
+timeCreated: 1522614721
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: Legs3_0
-    21300002: Legs3_1
+  fileIDToRecycleName: {}
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -83,35 +81,7 @@ TextureImporter:
     overridden: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: Legs3_0
-      rect:
-        serializedVersion: 2
-        x: 244
-        y: 1127
-        width: 1645
-        height: 907
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Legs3_1
-      rect:
-        serializedVersion: 2
-        x: 260
-        y: 162
-        width: 1544
-        height: 875
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
+    sprites: []
     outline: []
     physicsShape: []
   spritePackingTag: 

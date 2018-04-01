@@ -1,13 +1,9 @@
 fileFormatVersion: 2
-guid: 2a9ad38c34eca4d4a8f70fffb6e53ce8
-timeCreated: 1520886554
+guid: 84f7635833cbd624a9847af53969540b
+timeCreated: 1522616307
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: Pointyears_0
-    21300002: Pointyears_1
-    21300004: Pointyears_2
-    21300006: Pointyears_3
+  fileIDToRecycleName: {}
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -43,7 +39,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -67,81 +63,9 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-  - buildTarget: Standalone
-    maxTextureSize: 2048
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-  - buildTarget: WebGL
-    maxTextureSize: 2048
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: Pointyears_0
-      rect:
-        serializedVersion: 2
-        x: 270
-        y: 1185
-        width: 1562
-        height: 714
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Pointyears_1
-      rect:
-        serializedVersion: 2
-        x: 237
-        y: 471
-        width: 1593
-        height: 697
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Pointyears_2
-      rect:
-        serializedVersion: 2
-        x: 308
-        y: 1180
-        width: 626
-        height: 722
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Pointyears_3
-      rect:
-        serializedVersion: 2
-        x: 1146
-        y: 1186
-        width: 652
-        height: 711
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
+    sprites: []
     outline: []
     physicsShape: []
   spritePackingTag: 

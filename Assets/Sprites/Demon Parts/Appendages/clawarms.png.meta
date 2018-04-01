@@ -1,15 +1,11 @@
 fileFormatVersion: 2
-guid: 0e047f80bc8fb514892b73bc70e4698c
-timeCreated: 1520886983
+guid: 11000baa34a62e547b05c39cb3879fbc
+timeCreated: 1522614850
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
     21300000: clawarms_0
     21300002: clawarms_1
-    21300004: clawarms_2
-    21300006: clawarms_3
-    21300008: clawarms_4
-    21300010: clawarms_5
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -92,12 +88,12 @@ TextureImporter:
       name: clawarms_0
       rect:
         serializedVersion: 2
-        x: 11
-        y: 891
-        width: 1034
-        height: 1135
+        x: 997
+        y: 8
+        width: 1051
+        height: 2040
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -106,66 +102,10 @@ TextureImporter:
       name: clawarms_1
       rect:
         serializedVersion: 2
-        x: 1014
-        y: 59
-        width: 976
-        height: 1199
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: clawarms_2
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 900
-        width: 488
-        height: 1113
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: clawarms_3
-      rect:
-        serializedVersion: 2
-        x: 504
-        y: 899
-        width: 499
-        height: 1120
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: clawarms_4
-      rect:
-        serializedVersion: 2
-        x: 1035
-        y: 67
-        width: 445
-        height: 1177
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: clawarms_5
-      rect:
-        serializedVersion: 2
-        x: 1549
-        y: 82
-        width: 446
-        height: 1178
+        x: 0
+        y: 14
+        width: 992
+        height: 2034
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
