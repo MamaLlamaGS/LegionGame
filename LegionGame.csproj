@@ -83,7 +83,6 @@
     <Compile Include="Assets\Scripts\ChangingColor.cs" />
     <Compile Include="Assets\Scripts\Featuremanager.cs" />
     <Compile Include="Assets\Scripts\Level.cs" />
-    <Compile Include="Assets\Scripts\SceneMangler.cs" />
     <Compile Include="Assets\Scripts\StartGame.cs" />
     <Compile Include="Assets\Scripts\UIManager.cs" />
   </ItemGroup>
