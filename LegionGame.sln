@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2017
+# Visual Studio for Mac
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LegionGame", "LegionGame.csproj", "{C107C69A-CE00-D0C9-9BD6-FFBD09928180}"
 EndProject
 Global

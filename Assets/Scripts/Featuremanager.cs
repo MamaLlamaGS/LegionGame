@@ -35,17 +35,19 @@ public class Featuremanager : MonoBehaviour
         currFeature = index;
     }
 
-    //public void NextChoice(){
-    // if (features == null)
-    //retun;
-    //features[currFeature].currIndex ++;
-    //features[currFeature].UpdateFeature()
+    public void NextChoice(){
+    	if (features == null)
+    		return;
+    	features[currFeature].currIndex ++;
+		features [currFeature].UpdateFeature ();
+	}
 
-    //public void PreviousChoice(){
-    // if (features == null)
-    //retun;
-    //features[currFeature].currIndex --;
-    //features[currFeature].UpdateFeature()
+    public void PreviousChoice(){
+    	if (features == null)
+    		return;
+    	features[currFeature].currIndex --;
+		features [currFeature].UpdateFeature ();
+	}
 
 
 
