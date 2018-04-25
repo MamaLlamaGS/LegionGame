@@ -1,0 +1,17 @@
+﻿<Properties StartupConfiguration="{C107C69A-CE00-D0C9-9BD6-FFBD09928180}|">
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/DemonUIManager.cs">
+    <Files>
+      <File FileName="Assets/Scripts/DemonUIManager.cs" Line="74" Column="1" />
+      <File FileName="Assets/Scripts/ChangingColor.cs" Line="40" Column="1" />
+      <File FileName="Assets/Scripts/DemonCustomisationManager.cs" Line="88" Column="52" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.LegionGame PreferredExecutionTarget="Unity.Editor" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>
