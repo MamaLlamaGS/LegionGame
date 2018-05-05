@@ -15,8 +15,7 @@ public class DemonUIManager : MonoBehaviour
     private Button mouthButton;
     private GameObject bottomNavigation = null;
     private int featureIndex;
-    //private Button nextButton;
-    //private Button previousButton;
+    // examples from https://www.youtube.com/watch?v=xoIagG1RVeE
 
 
     // Use this for initialization
@@ -30,8 +29,10 @@ public class DemonUIManager : MonoBehaviour
         bottomNavigation.transform.Find("Next").GetComponent<Button>().onClick.AddListener(() => manager.NextChoice());
         earsButton = GameObject.Find("Ears Button").GetComponent<Button>(); 
         earsButton.onClick.AddListener(() => manager.SetCurrentFeatureType(GetFeatureIndex(earsButton)));
+        //Debug.Log("Start: earsButton name is " + earsButton.name);
         eyesButton = GameObject.Find("Eyes Button").GetComponent<Button>();
         eyesButton.onClick.AddListener(() => manager.SetCurrentFeatureType(GetFeatureIndex(eyesButton)));
+        //Debug.Log("Start: eyesButton name is " + eyesButton.name);
         noseButton = GameObject.Find("Nose Button").GetComponent<Button>();
         noseButton.onClick.AddListener(() => manager.SetCurrentFeatureType(GetFeatureIndex(noseButton)));
         mouthButton = GameObject.Find("Mouth Button").GetComponent<Button>();
@@ -44,13 +45,11 @@ public class DemonUIManager : MonoBehaviour
         if (b.name == "Ears Button") {
             return 0;
         } else if (b.name == "Eyes Button") {
-            return 2;
-           
+            return 1;         
         } else if (b.name == "Nose Button") {
             return 2;
         }
-        else 
-        {
+        else {
             return 3;
         }
     }
@@ -63,7 +62,6 @@ public class DemonUIManager : MonoBehaviour
         else if (i == 1)
         {
             return eyesButton;
-
         }
         else if (i == 2)
         {

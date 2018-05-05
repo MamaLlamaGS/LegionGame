@@ -48,7 +48,6 @@ public class DemonCustomisationManager : MonoBehaviour
                 if (!PlayerPrefs.HasKey(key))
                     PlayerPrefs.SetInt(key, features[i].currentIndex);
                 features[i].currentIndex = PlayerPrefs.GetInt(key);
-                //Debug.Log("LoadFeatures: feature key is " + key);
                 features[i].UpdateFeature();
             }
           
@@ -77,38 +76,17 @@ public class DemonCustomisationManager : MonoBehaviour
             currentFeature = index;
         }
     }
-/*
+
     // reaction to next feature button
-    public void NextChoice(int index)
-    {
-        if (features == null)
-            return;
-        features[currentFeature].currentIndex++;
-        features[currentFeature].UpdateFeature();
-        //Debug.Log("NextChoice: index is " + index);
-  }
-*/
-    // overload method with 0 arguments for adding listener
     public void NextChoice()
     {
         if (features == null)
             return;
         features[currentFeature].currentIndex++;
         features[currentFeature].UpdateFeature();
-        //Debug.Log("NextChoice: (0): inside");
     }
 
     // reaction to previous feature button
-/*    public void PrevChoice(int index)
-    {
-        if (features == null)
-            return;
-        features[currentFeature].currentIndex--;
-        features[currentFeature].UpdateFeature();
-        //Debug.Log("PrevChoice: index is " + index);
-    }
-*/
-    // overload method with 0 arguments for adding listener
     public void PrevChoice()
     {
         if (features == null)
@@ -117,9 +95,6 @@ public class DemonCustomisationManager : MonoBehaviour
         features[currentFeature].UpdateFeature();
         //Debug.Log("PrevChoice(0): inside");
     }
-
-
-
 
     // makes it so it can be seen in the Inspector
     [System.Serializable]
