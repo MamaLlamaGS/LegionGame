@@ -9,11 +9,56 @@ public class DemonCustomisationManager : MonoBehaviour
 
     // this class comes from https://www.youtube.com/watch?v=xoIagG1RVeE
 
-    // all the sprites need to be named consecutively (ie, face_0, face_1)
+    private int levelIndex;
+    private GameManager gameManager;
 
     public List <Feature> features;
     public int currentFeature;
     private GameObject face;
+    public Image buttonColourDisplay; //creation and connection of buttons to color
+    private Color[] colours;
+    public int whatColour = 0;
+    public SpriteRenderer head;
+    public SpriteRenderer body;
+    private Color currentColour;
+
+    private void Start()
+    {
+        body = GameObject.Find("Body").GetComponent<SpriteRenderer>();
+        gameManager = GameManager.instance;
+        levelIndex = gameManager.GetLevel();
+        currentColour = SetDefaultColourForLevel(levelIndex);
+
+    }
+
+    private Color SetDefaultColourForLevel (int iLevel) {
+        // need to get real values from bosses heads in RGBA and use Color32 instead
+        //Level 1 is hot pink
+        if (iLevel == 0)
+        {
+            return Color.magenta;
+        }
+        //Level 2 is mustard yellow
+        else if (iLevel == 1)
+        {
+            return Color.yellow;
+        }
+        //Level 3 is intense purple
+        else if (iLevel == 2)
+        {
+            return Color.gray;
+        }
+        //Level 4 is bright green
+        else if (iLevel == 3)
+        {
+            return Color.green;
+        }
+        //Level 5 is red
+        else
+        {
+            return Color.red;
+        }
+    }
 
     void OnEnable()
     {
@@ -30,9 +75,8 @@ public class DemonCustomisationManager : MonoBehaviour
     {
         features = new List <Feature>();
         face = GameObject.Find("Demon/Face");
-        //Debug.Log("LoadFeatures: face is " + face.name);
+        head = face.GetComponent<SpriteRenderer>();
         features.Add(new Feature("Ears", face.transform.Find("Ears").GetComponent<SpriteRenderer>()));
-        //Debug.Log("LoadFeatures: Ears is " + face.transform.Find("Ears").name);
         features.Add(new Feature("Eyes", face.transform.Find("Eyes").GetComponent<SpriteRenderer>()));
         features.Add(new Feature("Nose", face.transform.Find("Nose").GetComponent<SpriteRenderer>()));
         features.Add(new Feature("Mouth", face.transform.Find("Mouth").GetComponent<SpriteRenderer>()));
@@ -74,27 +118,44 @@ public class DemonCustomisationManager : MonoBehaviour
         else
         {
             currentFeature = index;
+            NextChoice(index);
         }
     }
 
     // reaction to next feature button
-    public void NextChoice()
+    public void NextChoice(int iFeature)
     {
         if (features == null)
             return;
-        features[currentFeature].currentIndex++;
-        features[currentFeature].UpdateFeature();
+        features[iFeature].currentIndex++;
+        features[iFeature].UpdateFeature();
     }
 
-    // reaction to previous feature button
-    public void PrevChoice()
+    // change color of Demon
+    public void ChangeDemonColour()
     {
-        if (features == null)
-            return;
-        features[currentFeature].currentIndex--;
-        features[currentFeature].UpdateFeature();
-        //Debug.Log("PrevChoice(0): inside");
+        whatColour++;
+        Debug.Log ("ChangeDemonColour: whatColour is " + whatColour);
+        UpdateColour(whatColour);
     }
+
+    public void UpdateColour(int iColour)
+    {
+        buttonColourDisplay.color = colours[iColour];
+
+        for (int i = 1; i < colours.Length; i++)
+        {
+            if (i == whatColour)
+            {
+                head.color = colours[i];
+                body.color = colours[i];
+                Debug.Log("Update: whatColour index is " + i);
+                //Debug.Log ("Update: whatColour index is " + colours[i]);
+            }
+        }
+    }
+
+
 
     // makes it so it can be seen in the Inspector
     [System.Serializable]
@@ -135,4 +196,28 @@ public class DemonCustomisationManager : MonoBehaviour
             renderer.sprite = choices[currentIndex];
         }
     }
+
+
+
+    /*
+    // reaction to next feature button
+    public void NextChoice()
+    {
+        if (features == null)
+            return;
+        features[currentFeature].currentIndex++;
+        features[currentFeature].UpdateFeature();
+    }
+
+    // reaction to previous feature button
+    public void PrevChoice()
+    {
+        if (features == null)
+            return;
+        features[currentFeature].currentIndex--;
+        features[currentFeature].UpdateFeature();
+    }
+    */
+
+
 }

@@ -8,13 +8,16 @@ public class DemonUIManager : MonoBehaviour
 {
 
     private DemonCustomisationManager manager;
-    private Text descText;
     private Button eyesButton;
     private Button earsButton;
     private Button noseButton;
     private Button mouthButton;
-    private GameObject bottomNavigation = null;
+    private Button colourButton;
     private int featureIndex;
+
+    //private Text descText;
+    //private GameObject bottomNavigation = null;
+
     // examples from https://www.youtube.com/watch?v=xoIagG1RVeE
 
 
@@ -22,21 +25,23 @@ public class DemonUIManager : MonoBehaviour
     void Start()
     {
         manager = FindObjectOfType<DemonCustomisationManager>();
-        bottomNavigation = GameObject.Find("Navigation");
-        descText = bottomNavigation.transform.Find("Description").GetComponent<Text>();
 
-        bottomNavigation.transform.Find("Previous").GetComponent<Button>().onClick.AddListener(() => manager.PrevChoice());
-        bottomNavigation.transform.Find("Next").GetComponent<Button>().onClick.AddListener(() => manager.NextChoice());
         earsButton = GameObject.Find("Ears Button").GetComponent<Button>(); 
         earsButton.onClick.AddListener(() => manager.SetCurrentFeatureType(GetFeatureIndex(earsButton)));
-        //Debug.Log("Start: earsButton name is " + earsButton.name);
         eyesButton = GameObject.Find("Eyes Button").GetComponent<Button>();
         eyesButton.onClick.AddListener(() => manager.SetCurrentFeatureType(GetFeatureIndex(eyesButton)));
-        //Debug.Log("Start: eyesButton name is " + eyesButton.name);
         noseButton = GameObject.Find("Nose Button").GetComponent<Button>();
         noseButton.onClick.AddListener(() => manager.SetCurrentFeatureType(GetFeatureIndex(noseButton)));
         mouthButton = GameObject.Find("Mouth Button").GetComponent<Button>();
         mouthButton.onClick.AddListener(() => manager.SetCurrentFeatureType(GetFeatureIndex(mouthButton)));
+
+        colourButton = GameObject.Find("Colour Button").GetComponent<Button>();
+        colourButton.onClick.AddListener(() => manager.ChangeDemonColour());
+
+        //bottomNavigation = GameObject.Find("Navigation");
+        //descText = bottomNavigation.transform.Find("Description").GetComponent<Text>();
+        //bottomNavigation.transform.Find("Previous").GetComponent<Button>().onClick.AddListener(() => manager.PrevChoice());
+        //bottomNavigation.transform.Find("Next").GetComponent<Button>().onClick.AddListener(() => manager.NextChoice());
         //InitializeFeatureButtons();
     }
 
@@ -74,6 +79,16 @@ public class DemonUIManager : MonoBehaviour
        
     }
 
+    // Update is called once per frame
+    void Update()
+    {
+        EventSystem.current.SetSelectedGameObject(GetButtonByIndex(manager.currentFeature).gameObject);
+        //UpdateFeatureButtons();
+        //descText.text = manager.features[manager.currentFeature].ID + " #" + (manager.features[manager.currentFeature].currentIndex + 1).ToString();
+        //Debug.Log("Update: descText is " + descText.text);
+    }
+
+
     /*
     private void InitializeFeatureButtons()
     {
@@ -110,13 +125,5 @@ public class DemonUIManager : MonoBehaviour
         } 
     } */
 
-    // Update is called once per frame
-    void Update()
-    {
-        //UpdateFeatureButtons();
-        EventSystem.current.SetSelectedGameObject(GetButtonByIndex(manager.currentFeature).gameObject);
-        descText.text = manager.features[manager.currentFeature].ID + " #" + (manager.features[manager.currentFeature].currentIndex + 1).ToString();
-        Debug.Log("Update: descText is " + descText.text);
-    }
 
 }
