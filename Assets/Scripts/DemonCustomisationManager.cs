@@ -16,47 +16,48 @@ public class DemonCustomisationManager : MonoBehaviour
     public int currentFeature;
     private GameObject face;
     public Image buttonColourDisplay; //creation and connection of buttons to color
-    private Color[] colours;
+    private Color32[] colours;
     public int whatColour = 0;
     public SpriteRenderer head;
     public SpriteRenderer body;
-    private Color currentColour;
+    private Color32 currentColour;
 
     private void Start()
     {
         body = GameObject.Find("Body").GetComponent<SpriteRenderer>();
-        gameManager = GameManager.instance;
-        levelIndex = gameManager.GetLevel();
+        gameManager = (GameManager)GameObject.Find("Main Camera").GetComponent("GameManager");
+        //levelIndex = gameManager.GetLevel();
+        levelIndex = 0;
         currentColour = SetDefaultColourForLevel(levelIndex);
 
     }
 
-    private Color SetDefaultColourForLevel (int iLevel) {
+    private Color32 SetDefaultColourForLevel (int iLevel) {
         // need to get real values from bosses heads in RGBA and use Color32 instead
-        //Level 1 is hot pink
+        //Level 1 is hot pink - rgba(240, 30, 170, 1) hexa #f01eaa
         if (iLevel == 0)
         {
-            return Color.magenta;
+            return new Color32(1,240,30,170);
         }
-        //Level 2 is mustard yellow
+        //Level 2 is mustard yellow - rgba(253, 174, 2, 1) hexa #fdae02
         else if (iLevel == 1)
         {
-            return Color.yellow;
+            return new Color32(1,253,174,2);
         }
-        //Level 3 is intense purple
+        //Level 3 is intense purple - rgba(172, 2, 253, 1) hexa #ac02fd
         else if (iLevel == 2)
         {
-            return Color.gray;
+            return new Color32(1,172,2,253);
         }
-        //Level 4 is bright green
+        //Level 4 is bright green - rgba(26, 190, 62, 1) hexa #1abe3e
         else if (iLevel == 3)
         {
-            return Color.green;
+            return new Color32(1,26,190,62);
         }
-        //Level 5 is red
+        //Level 5 is red - rgba(178, 15, 15, 1) hexa #b20f0f
         else
         {
-            return Color.red;
+            return new Color32(1,178,15,15);
         }
     }
 
@@ -80,6 +81,7 @@ public class DemonCustomisationManager : MonoBehaviour
         features.Add(new Feature("Eyes", face.transform.Find("Eyes").GetComponent<SpriteRenderer>()));
         features.Add(new Feature("Nose", face.transform.Find("Nose").GetComponent<SpriteRenderer>()));
         features.Add(new Feature("Mouth", face.transform.Find("Mouth").GetComponent<SpriteRenderer>()));
+        //features.Add(new Feature("Appendages", transform.Find("Appendages").GetComponent<SpriteRenderer>()));
         //features.Add(new Feature("ArmsWings", transform.Find("ArmsWings").GetComponent<SpriteRenderer>()));
         //features.Add(new Feature("Feet", transform.Find("Feet").GetComponent<SpriteRenderer>()));
         //features.Add(new Feature("Body", transform.Find("Body").GetComponent<SpriteRenderer>()));
